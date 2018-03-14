@@ -11,7 +11,6 @@ function openTagSeek(k, n){
     var a = k.search('<');
     if(a !== -1){
         var b = k.search('>');
-        console.log('TEST2');
         if(b !== -1 && k.charAt(a+1)!=='/'){
             var l = k.substring(b+1, n);
             var m = openTagSeek(l, n-b);
